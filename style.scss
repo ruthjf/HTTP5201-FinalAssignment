@@ -1,0 +1,51 @@
+$main-color: #DAF7A6;
+$font-color: #581845;
+$link-color: #A0331C;
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+h1 {
+  color: $font-color;
+}
+
+body {
+  background: $main-color;
+  color: $font-color;
+  text-align: center;
+}
+
+nav {
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      padding-right: 0.5em;
+      a {
+        list-style-type: none;
+        text-decoration: none;
+        color: $link-color;
+      }
+      a:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+main {
+  width: 50em;
+  border: 1px solid black;
+  margin: 2em auto;
+  p {
+    padding: 0 1em;
+  }
+}

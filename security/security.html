@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 4 | Security</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="../main.js"></script>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../qa/qa.html">Quality Assurance</a></li>
+      <li><a href="./security.html">Security</a></li>
+      <li><a href="../badex/badex.html">Bad Example</a></li>
+    </ul>
+  </nav>
+  <h2>Security</h2>
+  <main>
+    <p>Security is inspected through Chrome DevTools. The site is secure and using valid HTTPS. TLS certificate used is
+      valid through the Netlify app. The connection to the site is encrypted. https://securityheaders.com/ was used to
+      determine the best HTTP Headers configuration. No sensitive data is displayed or exposed. </p>
+    <h3>HTTP Headers Configuration:</h3>
+    <p>Content Security Policy : prevent XSS attacks through whitelisting approved content sources</p>
+    <p>Referrer Policy: allows a site to control navigation information in the browser</p>
+    <p>HTTP Strict Transport Security : strengthens TLS implementation</p>
+    <p>X-Frame Options: allows the site to be framed or not, defends from attacks like clickjacking</p>
+    <p>X-XSS-Protection: configuration for the built in XSS Auditor</p>
+  </main>
+</body>
+
+</html>
